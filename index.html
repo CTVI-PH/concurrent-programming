@@ -290,7 +290,7 @@ One chef, but THREE orders progressing "at the same time"</code></pre>
             </ul>
           </div>
           <div class="card">
-            <h2>Your Weekend Example</h2>
+            <h2>Our Weekend Example</h2>
             <pre><code>// Like your CakePHP script handling:
 - Read CSV row
 - Query database
@@ -353,7 +353,7 @@ THREE orders cooking truly simultaneously</code></pre>
             </ul>
           </div>
           <div class="card">
-            <h2>Your Weekend Example</h2>
+            <h2>Our Weekend Example</h2>
             <pre><code># THIS IS WHAT YOU DID!
 
 VM1: 20 PHP workers processing files 12-27
@@ -473,7 +473,7 @@ Thread 3: [C][C][C] ┘  sharing memory</code></pre>
       <section class="slide" data-title="SLIDE 9: THE RELATIONSHIPS">
         <h1>SLIDE 9: THE RELATIONSHIPS</h1>
         <h2>Can They Coexist?</h2>
-        <pre><code>Your Weekend Setup:
+        <pre><code>Our Weekend Setup:
 
 PARALLELISM: 2 VMs × 20 workers = 40 parallel workers
      ↓
@@ -599,7 +599,7 @@ Worker 3: Render frames 2001-3000
 Worker 4: Render frames 3001-4000
 
 Result: 4x faster rendering!</code></pre>
-        <h2>Your Data Processing</h2>
+        <h2>Our Data Processing</h2>
         <pre><code>VM1 Worker 1-20: Process files 12-27
 VM2 Worker 1-20: Process files 4-10
 
@@ -668,7 +668,7 @@ PHP handles I/O waits efficiently!</code></pre>
       <section class="slide" data-title="SLIDE 17: WHY THIS WAS PERFECT">
         <h1>SLIDE 17: WHY YOUR APPROACH WAS PERFECT</h1>
         <h2>The Decision Tree</h2>
-        <pre><code>Your Problem: Process 42M records
+        <pre><code>Our Problem: Process 42M records
 
 Q1: CPU-intensive or I/O-intensive?
 A: BOTH → Need PARALLELISM for CPU work ✅
@@ -770,7 +770,7 @@ Examples:
 Examples:
 - Modern web browsers
 - Database management systems
-- Your weekend setup! 🎯</code></pre>
+- Our weekend setup! 🎯</code></pre>
           </div>
         </div>
       </section>
@@ -828,7 +828,7 @@ Thread 1: Locks A → waits for B
 Thread 2: Locks B → waits for A
 Result: Both stuck forever! 🔒
 
-Solution: Your 0.04s sleep strategy prevented this! ✅</code></pre>
+Solution: Our 0.04s sleep strategy prevented this! ✅</code></pre>
           </div>
         </div>
       </section>
@@ -856,7 +856,7 @@ After:  "I MEASURED: 4.5 hours per file
          × 230 files = 194 days
          Therefore: parallelism needed!"
 
-Your approach: Data-driven ✅</code></pre>
+Our approach: Data-driven ✅</code></pre>
           </div>
         </div>
       </section>
@@ -929,7 +929,7 @@ Pros:
 ✅ Easy to add more machines
 ✅ Fault tolerant (one fails, others continue)
 
-Your result: 2 VMs = 2x speed ✅</code></pre>
+Our result: 2 VMs = 2x speed ✅</code></pre>
           </div>
           <div class="card">
             <h2>Vertical Scaling (Alternative)</h2>
@@ -952,7 +952,7 @@ Why you didn't: Limited by MySQL connections!</code></pre>
         <h2>Understanding Speedup</h2>
         <pre><code>Speedup = Time (sequential) / Time (parallel)
 
-Your numbers:
+Our numbers:
 = 194 days / 23 hours
 = 4,656 hours / 23 hours
 = 202.4x speedup! 🚀
@@ -964,7 +964,7 @@ Near-perfect scaling!
         <pre><code>If 5% of work MUST be sequential:
 Max speedup = 20x (no matter how many workers!)
 
-Your work: 99%+ parallelizable
+Our work: 99%+ parallelizable
 Result: Amazing scaling! ✅</code></pre>
       </section>
 
@@ -1196,7 +1196,7 @@ Risk: Human error, inconsistency
 
 YOUR AUTOMATED APPROACH:
 2 VMs × $500/month × 1 month = $1,000
-Your time: 1 weekend
+Our time: 1 weekend
 Ongoing: Reusable for future batches!
 
 ROI: 2,600x return on investment! 💰
@@ -1216,7 +1216,7 @@ Plus:
             <h2>1. Amdahl's Law</h2>
             <pre><code>"Speedup is limited by sequential portion"
 Takeaway: Make as much parallel as possible
-Your result: 99%+ parallelizable</code></pre>
+Our result: 99%+ parallelizable</code></pre>
           </div>
           <div class="card">
             <h2>2. Gustafson's Law</h2>
